@@ -1,0 +1,123 @@
+#container-form input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#container-inscript input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 90%;
+}
+
+#container-inscript input::placeholder {
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+}
+
+#container-form button {
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: blue;
+    width: 45%;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#container-form button:hover {
+    border: 1px solid #1e1eaf;
+    background-color: #1e1eaf;
+    color: #f1f1f1;
+}
+
+#container-inscript button {
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: yellowgreen;
+    width: 55%;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#container-inscript button:hover {
+    border: 1px solid #1e1eaf;
+    background-color: #1e1eaf;
+    color: #f1f1f1;
+}
+
+.getmit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.valid-cgu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+}
+
+.valid-cgu span {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.valid-cgu span a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+
+.valid-cgu span a:hover {
+    color: blueviolet;
+}
+
+/* CONNEXION SOCIAL MEDIA BUTTON */
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-container a:hover {
+    background-color: #8080801c;
+}
+
+.social-container a:hover i {
+    color: blue;
+}
+

@@ -1,0 +1,358 @@
+#container-form,
+#container-inscript {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    height: 120vh;
+    overflow: hidden;
+
+}
+
+#container-form {
+    grid-template-areas:
+        "left-side right-side";
+}
+
+#container-inscript {
+    grid-template-areas:
+        "panel-left panel-right";
+}
+
+.left-side,
+.right-side {
+    padding: 50px 80px 70px 50px
+}
+
+.panel-right {
+    padding: 50px 80px 70px 0
+}
+
+.panel-left {
+    padding: 50px 62px 70px 100px
+}
+
+
+.right-side {
+    /* background-color: #6ecff1; */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(168deg, #427CFF, #7E2FFF 98%);
+}
+
+.right-side span {
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 0.838em;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+    color: white;
+}
+
+.overlay-left {
+    width: 100%;
+    max-height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    /* background-image: radial-gradient(at 80% 20%, #60CAFC 0%, #A56CFF 60%, #5D2EFF 130%); */
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.item-text {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.item-picture {
+    grid-row: 1;
+    grid-column: 1;
+    overflow: hidden;
+    display: block;
+    --minimum-row-spacing: 50px;
+}
+
+.item-picture img {
+    display: block;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.containerconnect .right-side h1.new {
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.right-side p {
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    /* margin: 20px 0 30px; */
+    color: white;
+}
+
+#container-form .right-side a {
+    border-color: transparent;
+    background-color: transparent;
+    color: blue;
+    text-decoration: none;
+}
+
+#container-form .right-side button {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    width: 100%;
+    transition: border-color .3s linear, color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+#container-form .right-side button:hover {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    width: 100%;
+}
+
+#container-inscript .panel-left {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONNEXION H1 */
+.containerconnect h1 {
+    font-weight: bold;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 40px;
+}
+
+.inscription h1 {
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 40px;
+}
+
+/* CONNEXION H2 */
+.containerconnect h2 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    padding-left: 40px;
+}
+
+.head-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-form form,
+#container-inscript form {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 40px;
+}
+
+#container-form form span,
+#container-inscript form span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#container-form form a.forget {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container-form form a.forget:hover {
+    color: blueviolet;
+}
+
+.item-text span {
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-top: 25px;
+}
+
+.inscription p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4;
+    letter-spacing: 0.07em;
+}
+
+/* CONNEXION INPUT */
+#container-form input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#container-inscript input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 90%;
+}
+
+#container-inscript input::placeholder {
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+}
+
+#container-form button {
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: blue;
+    width: 45%;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#container-form button:hover {
+    border: 1px solid #1e1eaf;
+    background-color: #1e1eaf;
+    color: #f1f1f1;
+}
+
+#container-inscript button {
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: blue;
+    width: 55%;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#container-inscript button:hover {
+    border: 1px solid #1e1eaf;
+    background-color: #1e1eaf;
+    color: #f1f1f1;
+}
+
+.getmit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.valid-cgu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+}
+
+.valid-cgu span {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.valid-cgu span a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+
+.valid-cgu span a:hover {
+    color: blueviolet;
+}
+
+/* CONNEXION SOCIAL MEDIA BUTTON */
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-container a:hover {
+    background-color: #8080801c;
+}
+
+.social-container a:hover i {
+    color: blue;
+}
